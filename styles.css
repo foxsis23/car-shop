@@ -6,7 +6,6 @@ body {
     text-align: justify;
     background-color: #faebd7;
     margin: 0;
-    padding: 20px;
 }
 
 
@@ -17,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .nav a {
-    color: darkblue;
+    color: gold;
     font-weight: bold;
 }
 
@@ -26,9 +25,6 @@ body.car-detail p {
     color: rebeccapurple;
 }
 
-div a {
-    color: darkred;
-}
 
 
 h2 + p {
@@ -43,7 +39,7 @@ p + ol {
 
 
 div > a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 ul > li {
@@ -81,17 +77,39 @@ img {
     border-radius: 10px;
 }
 
-.profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
+
 
 
 iframe {
     display: block;
-    margin: 20px auto;
+    margin: 20px;
     border-radius: 10px;
+}
+
+
+
+.image-gallery img {
+    width: 250px;
+    height: 150px;
+    margin: 0;
+}
+
+
+.car-header {
+    text-align: center;
+    background-color: #c0c0c0;
+    padding: 15px;
+    margin-top:40px;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+.brand-name {
+    font-weight: bold;
+    color: darkblue;
 }
 
 
@@ -100,10 +118,86 @@ iframe {
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
+    position: relative;
 }
 
-.image-gallery img {
-    width: 250px;
-    height: 150px;
-    margin: 0;
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+
+
+a:link {
+    color: darkblue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: orange;
+}
+
+
+ul li:first-child {
+    font-weight: bold;
+    color: green;
+}
+
+
+h2::before {
+    content: "🔥 ";
+    color: red;
+}
+
+h2::after {
+    content: " 🚗";
+    color: blue;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.navigation-items{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.car-description {
+    width: 60%;
+    float: left;
+    padding: 10px;
+    background: #ddd;
+    margin: 10px;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
