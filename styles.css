@@ -9,81 +9,52 @@ body {
     padding: 20px;
 }
 
-body.catalog {
-    background-color: #5f9ea0 !important;
-}
-
-body.car-detail {
-    background-color: aqua;
-}
-
-body.profile {
-    background-color: #faebd7;
-}
-
-body.index {
-    background-color: #fff8dc;
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     color: #333;
 }
 
-h2 {
-    font-size: 24px;
-    color: darkblue;
-}
-
-a {
-    color: #dc143c;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: black;
-}
-
-.nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .nav a {
-    margin: 0 15px;
-}
-
-p.special {
-    font-style: italic;
-    font-size: 18px;
-    color: darkgreen;
-}
-
-ol, ul {
-    padding-left: 20px;
-}
-
-ol {
-    list-style-type: decimal;
-    background-color: white;
-    width: fit-content;
-}
-
-ul {
-    list-style-type: square;
-}
-
-dl dt {
+    color: darkblue;
     font-weight: bold;
-    font-size: 18px;
 }
 
-dl dd {
-    margin-left: 20px;
-    font-size: 16px;
+body.car-detail p {
+    font-size: 18px;
+    color: rebeccapurple;
 }
+
+div a {
+    color: darkred;
+}
+
+
+h2 + p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p + ol {
+    border: 2px dashed darkblue;
+    padding: 20px;
+}
+
+
+div > a {
+    text-decoration: underline;
+}
+
+ul > li {
+    list-style-type: square;
+    font-style: italic;
+}
+
+tr > td {
+    background-color: #f8f8f8;
+}
+
 
 table {
     width: 90%;
@@ -104,10 +75,9 @@ th {
 }
 
 
-
 img {
     display: block;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 10px;
 }
 
@@ -117,6 +87,7 @@ img {
     border-radius: 50%;
 }
 
+
 iframe {
     display: block;
     margin: 20px auto;
@@ -124,6 +95,15 @@ iframe {
 }
 
 
-col{
-    background-color: white;
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 250px;
+    height: 150px;
+    margin: 0;
 }
