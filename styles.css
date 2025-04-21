@@ -1,203 +1,204 @@
-
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: justify;
-    background-color: #faebd7;
-    margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+  background-color: #faebd7;
+  margin: 0;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-    color: #333;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #333;
 }
-
 
 .nav a {
-    color: gold;
-    font-weight: bold;
+  color: gold;
+  font-weight: bold;
 }
-
-body.car-detail p {
-    font-size: 18px;
-    color: rebeccapurple;
-}
-
-
 
 h2 + p {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 p + ol {
-    border: 2px dashed darkblue;
-    padding: 20px;
+  border: 2px dashed darkblue;
+  padding: 20px;
 }
 
-
 div > a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+div a {
+  text-decoration: underline;
 }
 
 ul > li {
-    list-style-type: square;
-    font-style: italic;
+  list-style-type: square;
+  font-style: italic;
 }
 
 tr > td {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
 }
-
 
 table {
-    width: 90%;
-    border-collapse: collapse;
-    margin: 20px auto;
-    font-size: 16px;
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-size: 16px;
 }
 
-th, td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
 }
 
 th {
-    background-color: #c0c0c0;
-    font-weight: bold;
+  background-color: #c0c0c0;
+  font-weight: bold;
 }
-
 
 img {
-    display: block;
-    margin: 10px auto;
-    border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
 }
-
-
-
 
 iframe {
-    display: block;
-    margin: 20px;
-    border-radius: 10px;
+  display: block;
+  margin: 20px;
+  border-radius: 10px;
 }
 
-
+p {
+  font-size: 50px;
+  color: rebeccapurple;
+}
 
 .image-gallery img {
-    width: 250px;
-    height: 150px;
-    margin: 0;
+  width: 250px;
+  height: 150px;
+  margin: 0;
 }
 
-
 .car-header {
-    text-align: center;
-    background-color: #c0c0c0;
-    padding: 15px;
-    margin-top:40px;
+  text-align: center;
+  background-color: #c0c0c0;
+  padding: 15px;
+  margin-top: 40px;
 }
 
 .highlight {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 .brand-name {
-    font-weight: bold;
-    color: darkblue;
+  font-weight: bold;
+  color: darkblue;
 }
-
 
 .image-gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
 }
-
 
 .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    float: left;
-    margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  float: left;
+  margin: 10px;
 }
 
-
 a:link {
-    color: darkblue;
+  color: darkblue;
 }
 
 a:visited {
-    color: purple;
+  color: purple;
 }
 
 a:hover {
-    color: red;
-    text-decoration: underline;
+  color: red;
+  text-decoration: underline;
 }
 
 a:active {
-    color: orange;
+  color: orange;
 }
-
 
 ul li:first-child {
-    font-weight: bold;
-    color: green;
+  font-weight: bold;
+  color: green;
+  font-size: 35px;
 }
 
-
 h2::before {
-    content: "🔥 ";
-    color: red;
+  content: "🔥 ";
+  color: red;
 }
 
 h2::after {
-    content: " 🚗";
-    color: blue;
+  content: " 🚗";
+  color: blue;
 }
-
 
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #FFF;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding:10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-.navigation-items{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-right: 20px;
+.navigation-items {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: 20px;
 }
 
 .car-description {
-    width: 60%;
-    float: left;
-    padding: 10px;
-    background: #ddd;
-    margin: 10px;
+  width: 60%;
+  float: left;
+  padding: 10px;
+  background: #ddd;
+  margin: 10px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+button {
+  width: fit-content;
+  border-radius: 5px;
+  padding: 10px 7px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
 }
