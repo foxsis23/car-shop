@@ -5,6 +5,25 @@
     <meta name="author" content="Стрілець Ілля" />
     <link rel="stylesheet" href="styles.css" />
     <title>Catalog</title>
+    <style>
+      .car-image {
+        width: 300px;
+      }
+
+      .car-item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .car-item p {
+        font-size: 20px;
+      }
+
+      .car-item img {
+        margin: 10px 0px;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -17,12 +36,18 @@
     </nav>
 
     <div class="wrapper">
-      <ul style="margin-top: 40px">
-        <li>Ford Mustang</li>
-        <li>Chevrolet Camaro</li>
-        <li>Dodge Challenger</li>
+      <ul
+        id="car-list"
+        onclick="highlightListItem(event)"
+        style="margin-top: 40px"
+      >
+        <li id="mustang" onclick="{changeMustangDescription()}">
+          Ford Mustang
+        </li>
+        <li id="camaro">Chevrolet Camaro</li>
+        <li id="challenger">Dodge Challenger</li>
       </ul>
-      <ul>
+      <ul id="car-list2">
         <li>BMW M4</li>
         <li>Audi RS5</li>
         <li>Mercedes-AMG C63</li>
@@ -31,11 +56,8 @@
       <table>
         <colgroup>
           <col span="1" />
-          <!-- Стовпець "Марка" -->
           <col span="2" />
-          <!-- Два стовпці для фото і опису -->
           <col span="1" />
-          <!-- Ціна -->
         </colgroup>
 
         <caption>
@@ -62,8 +84,9 @@
               alt="Ford Mustang"
             />
           </td>
-          <td align="left">
+          <td id="mustang-description" align="left">
             Культовий американський спорткар, випускається з 1964 року.
+            <button id="btn1">Більше інформації</button>
           </td>
           <td rowspan="2" valign="middle"><b>$55,000</b></td>
         </tr>
@@ -81,7 +104,10 @@
               alt="Chevrolet Camaro"
             />
           </td>
-          <td align="left">Конкурент Mustang із сучасним дизайном.</td>
+          <td id="camaro-description" align="left">
+            Конкурент Mustang із сучасним дизайном.
+            <button id="btn3">Читати більше</button>
+          </td>
           <td rowspan="2" valign="middle"><b>$50,000</b></td>
         </tr>
         <tr>
@@ -98,7 +124,10 @@
               alt="Dodge Challenger"
             />
           </td>
-          <td align="left">Агресивний масл-кар із потужними моторами.</td>
+          <td id="challenger-description" align="left">
+            Агресивний масл-кар із потужними моторами.
+            <button id="btn2">Більше інформації</button>
+          </td>
           <td rowspan="2" valign="middle"><b>$60,000</b></td>
         </tr>
         <tr>
@@ -122,8 +151,24 @@
           <td align="left"><i>Двигун: 3.0L Twin-Turbo, 503 к.с.</i></td>
         </tr>
       </table>
+
+      <div id="menu">
+        <button data-action="showMustang">Показати Ford Mustang</button>
+        <button data-action="showCamaro">Показати Chevrolet Camaro</button>
+        <button data-action="showChallenger">Показати Dodge Challenger</button>
+      </div>
+
+      <div id="output"></div>
+
+      <button class="menu-btn" data-car="tesla">Показати Tesla Model S</button>
+      <button class="menu-btn" data-car="porsche">Показати Porsche 911</button>
+      <button class="menu-btn" data-car="lamborghini">
+        Показати Lamborghini Aventador
+      </button>
+
+      <div id="car-container"></div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./scripts/catalog-script.js"></script>
   </body>
 </html>
