@@ -64,13 +64,10 @@ function removeHandler() {
 setTimeout(removeHandler, 5000);
 
 function highlightListItem(event) {
-  // Перевірка, чи це елемент списку
   if (event.target.tagName === "LI") {
-    // Видаляємо підсвічування з усіх елементів
     const items = document.querySelectorAll("#car-list li");
     items.forEach((item) => item.classList.remove("highlight"));
 
-    // Додаємо підсвічування до обраного елементу
     event.target.classList.add("highlight");
   }
 }
