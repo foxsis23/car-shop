@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     el.addEventListener("mouseover", (event) => {
       if (!event.currentTarget.contains(event.relatedTarget)) {
         event.target.style.backgroundColor = "#fffae6";
+        event.target.style.fontWeight = "700";
         event.target.style.cursor = "pointer";
       }
     });
@@ -26,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     el.addEventListener("mouseout", (event) => {
       if (!event.currentTarget.contains(event.relatedTarget)) {
         event.target.style.backgroundColor = "";
+        event.target.style.fontWeight = "";
         event.target.style.cursor = "";
       }
     });
